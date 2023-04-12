@@ -1,0 +1,156 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    // Common
+
+    .vitamin_title {    
+        font-size: 1.4rem;
+    }
+
+    .vitamin_btn{
+        background-color: var(--primary-color);
+        color: white;
+        float: right;
+        // margin-top: 20px;
+    }
+
+    .vitamen_header{
+        .user_img{
+            height: 50px !important;
+        }
+    }
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+
+    // HEADER
+    .vitamen_header{
+        padding: 20px 30px;
+        .header_brand{
+            display: none !important;
+        }
+        .navbar-show-btn{
+            display: block;
+        }
+        .user_img{
+            height: 60px;
+        }
+    }
+
+    // SIDEBAR
+    .content_wrapper{
+        .sidebar_wrapper{
+            display: none;
+            width: 0px;
+            
+            // z-index: 10;
+        }
+        .content{
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        &.show{
+            background-color: rgba(#000000, .5);
+            height: 100vh;
+            overflow: hidden;
+            z-index: 0;
+            position: relative;
+            .sidebar_wrapper{
+                display: block;
+                width: 270px;
+            }
+            .content{
+                width: 100%;
+                margin-left: 260px;
+            }
+        }
+        .table_container{
+            .thead{
+                display: none;
+            }
+            tbody, tr, td{
+                display: block;
+                width: 100%;
+            }
+            tr{
+                margin-bottom: 25px;
+            }
+            tbody tr td{
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+
+            }
+            td:before{
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-weight: 600;
+                font-size: 14px;
+                text-align: left;
+                color: #000000;
+                font-weight: 700;
+            }
+
+        }
+
+
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+    .alert{
+        margin: 30px 0px 30px 0px;
+        // display: flex;
+        position: relative;
+        &:hover{
+            cursor: pointer;
+        }
+        .information{
+            display: flex;
+            flex-direction: column;
+        }
+        .action{
+            font-weight: 600;
+            // display: block;
+
+        }
+        .alert_content{
+        //   margin-left: auto;
+            font-weight: 500;
+            // display: block;
+            // align-self: flex;
+            
+        }
+        .datetime{
+
+            font-style: italic;
+            // display: block;
+            // position: relative;
+            // left: 15px;
+            // bottom: 10px;
+
+
+        }
+
+        }
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+
+
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+
+    
+ }

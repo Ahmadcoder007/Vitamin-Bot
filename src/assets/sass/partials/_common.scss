@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+
+:root{
+    --primary-font: 'Roboto', sans-serif;
+    --background-color: #f5f5f5;
+
+    --primary-color: #007DBC;
+    --light-gray: #F2F3F5;
+
+}
+body{
+    background-color: var(--background-color);
+    font-family: var(--primary-font);
+}
+
+.vitamin_btn{
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: white;
+    float: right;
+    // margin-top: 20px;
+}
+.vitamin_title{
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.vitamin_input{
+    // width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.vitamin_section{
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 14px;
+}

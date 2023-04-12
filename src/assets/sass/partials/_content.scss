@@ -1,0 +1,387 @@
+.content_wrapper{
+    position: relative;
+    // transition: all .2s ease;
+    transition: all .2s ease;
+    .sidebar_wrapper{
+      width: 275px;
+      display: block;
+      z-index: 10;  
+      transition: all .2s ease;
+      
+      ul{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        background-color: white;
+        width: 100%;
+
+        li{
+          padding: 15px 30px;
+          position: relative;
+          transition: all .2s;
+          &::after{
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: var(--background-color);
+            content: "";
+            bottom: 0px;
+            left: 0px;
+          }
+
+          &:hover{
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+          }
+          &.active{
+            background-color: var(--primary-color);
+            color: white;
+
+          }
+
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .content{
+      width: calc(100% - 275px);
+      margin-left: 275px;
+      overflow: hidden;
+      height: 100vh;
+      padding: 0px 20px 0px 10px;
+      // background-color: white;
+
+      // Home 
+      .home_wrapper{
+        margin: 5px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+
+        .heading{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+
+        }
+
+      }
+
+      // Create New File
+      .create_wrapper{
+        margin: 5px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 5; 
+        padding: 15px;
+
+      }
+
+      .config_wrapper{
+        margin: 5px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+        padding: 15px;
+        overflow: scroll;
+        .heading{
+          margin-bottom: 40px;
+          .vitamin_btn{
+            padding: 7px 35px;
+
+          }
+          
+        }
+        .functional_btn{
+          .vitamin_btn{
+            float: left;
+            margin: 40px 20px 0px 0px;
+            padding: 7px 35px;
+            
+          }
+        }
+      }
+
+      .deploy_wrapper{
+        margin: 5px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+        padding: 15px;
+        overflow: scroll;
+
+        .vitamin_heading{
+          display: flex;
+          justify-content: space-between;
+          .vitamin_switches{
+            display: flex;
+            align-items: center;
+
+            input{
+              height: 20px;
+              width: 40px;
+            }
+          }
+        }
+
+        .functional_btn{
+          .vitamin_btn{
+            float: left;
+            margin: 40px 20px 0px 0px;
+            padding: 7px 35px;
+            
+          }
+        }
+      }
+
+      .create_text_wrapper{
+        margin: 5px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+        padding: 15px;
+        overflow: scroll;
+
+        .heading{
+          margin-bottom: 40px;
+          .vitamin_btn{
+            padding: 7px 35px;
+
+          }
+          
+        }
+
+        .functional_btn{
+          .vitamin_btn{
+            float: left;
+            margin: 40px 20px 0px 0px;
+            padding: 7px 35px;
+            
+          }
+        }
+      }
+
+      .create_new_file{
+          margin: 5px;
+          background-color: white;
+          height: 100%;
+          width: 100%;
+          z-index: 5;
+  
+          .heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            .vitamin_title{
+              text-align: center;
+            }
+
+            .vitamin_btn{
+              padding: 5px 10px;
+              font-weight: 500;
+            }
+          }
+          .bot_image_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 70px;
+            label{
+              background-color: #F7F8F9;
+              width: 80%;
+              border: 2px dashed var(--primary-color);
+              padding: 30px;
+              text-align: center;
+              border-radius: 10px;
+
+              strong, span{
+                display: block;
+              }
+            }
+            .bot_image{
+              display: none;
+            }
+
+          }
+       }
+       
+       .logs_wrapper{
+        margin: 5px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+        padding: 15px;
+        overflow: scroll;
+        .heading{
+          margin-bottom: 40px;
+          .vitamin_btn{
+            padding: 7px 35px;
+
+          }
+        }
+        .alert{
+          margin: 30px 0px 30px 0px;
+          // display: flex;
+          position: relative;
+          &:hover{
+            cursor: pointer;
+          }
+          .information{
+            display: flex;
+            justify-content: space-between;
+          }
+          .action{
+            font-weight: 600;
+            margin-right: 20px;
+          }
+          .alert_content{
+            // margin-left: auto;
+            font-weight: 500;
+
+          }
+          .datetime{
+            // position: absolute;
+            // right: 30px;
+            // float: right;
+            margin-left: auto !important;
+            font-style: italic;
+          }
+
+        }
+        
+      }
+    }
+
+    .chat_wrapper{
+      transition: 1s all ease;
+      width: 350px;
+      .chat-toggle {
+        position: fixed;
+        bottom: 10px;
+        right: 40px;
+        cursor: pointer;
+
+        img{
+          height: 100px;
+          object-fit: contain;
+        }
+      }
+
+      .chat_panel{
+        object-fit: contain;
+        position: fixed;
+        right: 100px;
+        bottom: 60px;
+        z-index: 10;
+        display: none;
+        &.show{
+          display: block;
+        }
+        .arrow{
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+
+        .chat_window{
+          border-radius: 15px;
+          width: 350px;
+          height: 460px;
+        }
+
+        .card-header{
+          background-color: #569FD2;
+          color: white;
+          font-weight: 500;
+          border-radius: 10px 10px 0px 0px;
+          i.arrow{
+            float: right;
+            margin-top: 5px;
+          }
+          // display: flex;
+          // justify-content: space-between;
+        }
+
+        .card-body{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .single_message{
+            background-color: var(--light-gray);
+            width: fit-content;
+            padding: 7px 10px;
+            border-radius: 8px;
+            // float: left;
+            align-self: flex-start;
+            &.author{
+              float: right;
+              background-color: #569FD2;
+              color: white;
+              align-self: flex-end;
+
+            }
+          }
+        }
+        .card-footer{
+          padding: 0px;
+          border: 1px solid var(--light-gray);
+          input{
+            width: 100%;
+            background-color: var(--light-gray);
+            border: none;
+            &::placeholder{
+              font-size: 12px;
+
+            }
+
+            &:focus{
+              box-shadow: none;
+            }
+          }
+        }
+        img{
+          height: 80px;
+          object-fit: contain;
+        }
+
+        .chat_panel_window{
+          position: relative;
+
+        }
+      }
+    }
+
+
+    .table_container{
+      th{
+        font-weight: 700;
+      }
+      td{
+        color: blue;
+      }
+      td:first-child{
+        color: black;
+        font-weight: 600;
+      }
+    }
+
+
+
+}

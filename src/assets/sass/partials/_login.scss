@@ -1,0 +1,50 @@
+.login_wrapper, .register_wrapper, .varify_wrapper{
+    // width: 100vw;
+
+    h1.registration_title, h2.registration_subtitle, h3{
+        font-weight: bold;
+    }
+    .card_row{
+        height: 100vh;
+        // background-color: #fff;
+    }
+    .logo_img{
+        height: 170px;
+        object-fit: contain;
+    }
+    .login_card {
+        // padding: 70px 28px;
+        padding: 60px 15px;
+
+    }   
+    .fields{
+        width: 75%;
+    }
+
+    label{
+        align-self: start;
+    }
+
+    .login_btn{
+        width: 100%;
+        background-color: #007DBC;
+        font-weight: bold;
+    }
+    .varify_btn{
+        width: 70%;
+        background-color: #007DBC;
+        font-weight: bold;
+    }
+
+}
+
+.varify_wrapper{
+    .login_card{
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+}

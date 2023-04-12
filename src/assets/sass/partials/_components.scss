@@ -1,0 +1,26 @@
+.vitamen_header{
+    padding: 20px 30px;
+    .header_brand{
+        display: block;
+    }
+    .logo{
+        height: 70px;
+        object-fit: contain;
+    }
+    .navbar-show-btn{
+        display: none;
+    }
+    .title{
+        font-weight: bold;
+    }
+    .user_img{
+        height: 70px;
+        object-fit: contain;
+    }
+
+    .menu-btn.navbar-show-btn {
+        height: 25px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+}
